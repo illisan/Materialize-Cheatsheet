@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css" <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Materialize Cheatsheet</title>
+</head>
+<nav>
+    <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">Materialize Cheatsheet</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                <a href="buttons.html">Buttons</a>
+            </li>
+            <li>
+                <a href="badges.html">Collections</a>
+            </li>
+            <li>
+                <a href="collapsible.html">Cards</a>
+            </li>
+            <li>
+                <a href="collapsible.html">Helpers</a>
+            </li>
+            <li>
+                <a href="collapsible.html">Forms</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <!-- BUTTONS -->
+    <div class="container">
+        <section class="buttonSec contiainer">
+            <h2>Buttons</h2>
+            <p>There are three types of buttons in materialize:</p>
+            <h4>Raised Buttons</h4>
+            <div>
+                <h5>Effects</h5>
+                <button class="btn">standard</button>
+                <button class="btn pulse">pulse</button>
+                <button class="btn waves-effect">waves</button>
+
+            </div>
+            <div>
+                <h5>Color Classes & Sizes</h5>
+                <button class="btn red lighten-4">pink</button>
+                <button class="btn-large  pink accent-2 ">LARGE</button>
+                <button class="btn  light-green lighten-3">green</button>
+
+            </div>
+            <div>
+                <h5>Submit</h5>
+                <button class="btn blue lighten-3" type="submit">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+
+            </div>
+            <div>
+                <h5>Disabled</h5>
+                <button class="btn disabled">disabled</button>
+            </div>
+            <h4>Floating</h4>
+            <a href="https://www.google.ca" class="btn-floating amber darken-1 btn-large pulse">
+                <i class="large material-icons">add</i>
+            </a>
+
+
+            <!-- FIXED ACTION BUTTONS -->
+            <!-- FIXED RED -->
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large red">
+                    <i class="large material-icons">mode_edit</i>
+                </a>
+                <ul>
+                    <li>
+                        <a class="btn-floating purple">
+                            <i class="material-icons">insert_chart</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating yellow darken-1">
+                            <i class="material-icons">format_quote</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating green">
+                            <i class="material-icons">publish</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue">
+                            <i class="material-icons">attach_file</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- FAB HORIZONTAL -->
+            <div class="fixed-action-btn horizontal">
+                <a class="btn-floating btn-large red">
+                    <i class="large material-icons">mode_edit</i>
+                </a>
+                <ul>
+                    <li>
+                        <a class="btn-floating red">
+                            <i class="material-icons">insert_chart</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating yellow darken-1">
+                            <i class="material-icons">format_quote</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating green">
+                            <i class="material-icons">publish</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-floating blue">
+                            <i class="material-icons">attach_file</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>Flat Buttons</h4>
+                <a class="waves-effect waves-yellow btn-flat">Button</a>
+            </div>
+
+        </section>
+
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+        <script>
+            $(".button-collapse").sideNav();
+        </script>
+
+</body>
+
+</html>
